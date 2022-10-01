@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style = "background-image: url('2222.jpg');">
+
+    <!-- <input type="number" name="" id="n1">
+        <input type="number" name="" id="n2">
+        <button onclick="calFun()">calculate</button>
+    <script src="script.js" ></script>
+    <script>
+        function calFun(){
+            var a= document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            console.log(Number(a) + Number(b));
+            c=Number(a)+ Number(b)
+            document.getElementbyId("result"),innerHTML ="the result is "+c;
+        }
+    </script> -->
+
+    <h1 style="color: black;"> Simple Interest Calculator</h1>
+    <br>
+    <h3> Enter the principal amount</h3>
+    <input type="number" name="" id="n1"> <br>
+    <h3> Enter the time period
+    </h3>
+
+    <input type="number" name="" id="t">
+    <h3>Enter the Rate of Interest</h3>
+    <input type="number" name="" id="r">
+    <br>
+    <div style="padding-top: 10px;">
+        <button onclick="SIcal()">Calculate the SI</button>
+    </div>
+    <br>
+    <h2>
+        <p id="result"></p>
+    </h2>
+
+    <script src="script.js"></script>
+    <script>
+        function SIcal() {
+            var p = document.getElementById("n1").value;
+            var t = document.getElementById("t").value;
+            var r = document.getElementById("r").value;
+            console.log(Number(p) * Number(r) * Number(t) / 100)
+            si = Number(p) * Number(r) * Number(t) / 100
+            document.getElementById("result").innerHTML = "The simple interest is " + si;
+        }
+    </script>
+
+
+</body>
+
+</html>
